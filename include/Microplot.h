@@ -40,6 +40,13 @@ public:
     /// @param y1 Point 1 y coordinate
     void line(i16 x0, i16 y0, i16 x1, i16 y1);
 
+    /// @brief Plots a bezier curve
+    /// @param x0 Point 0 x coordinate
+    /// @param y0 Point 0 y coordinate
+    /// @param x1 Point 1 x coordinate
+    /// @param y1 Point 1 y coordinate
+    /// @param x2 Point 2 x coordinate
+    /// @param y2 Point 2 y coordinate
     void bezier(i16 x0, i16 y0, i16 x1, i16 y1, i16 x2, i16 y2);
 
     /// @brief Convert the current plot to a bitmap
