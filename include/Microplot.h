@@ -45,6 +45,9 @@ public:
     /// @param w Bitmap width
     /// @param h Bitmap height
     void toBitmap(u8 *bmp, u16 w, u16 h);
+
+    /// @brief Clears current plot
+    void clear();
     ~Microplot();
 
 private:

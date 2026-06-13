@@ -50,6 +50,11 @@ void Microplot::toBitmap(u8 *bmp, u16 w, u16 h)
     }
 }
 
+void Microplot::clear()
+{
+    points.clear();
+}
+
 Microplot::~Microplot()
 {
 }
