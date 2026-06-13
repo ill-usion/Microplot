@@ -27,7 +27,7 @@ int main()
 {
     Microplot plot(W, H);
 
-    int16_t points[][2] = {{0, 0}, {5, 10}, {13, 7}, {25, 20}, {50, 5}, {W, H}};
+    int16_t points[][2] = {{0, 0}, {5, 10}, {13, 7}, {25, 20}, {50, 5}};
     size_t nPoints = sizeof(points) / sizeof(points[0]);
 
     for (size_t i = 1; i < nPoints; i++)
@@ -37,6 +37,8 @@ int main()
 
         plot.line(p1[0], p1[1], p2[0], p2[1]);
     }
+
+    plot.bezier(50, 5, 70, 6, W, H);
 
     uint8_t *bmp = (uint8_t *)malloc(sizeof(uint8_t) * W * H);
     plot.toBitmap(bmp, W, H);

@@ -40,6 +40,8 @@ public:
     /// @param y1 Point 1 y coordinate
     void line(i16 x0, i16 y0, i16 x1, i16 y1);
 
+    void bezier(i16 x0, i16 y0, i16 x1, i16 y1, i16 x2, i16 y2);
+
     /// @brief Convert the current plot to a bitmap
     /// @param bmp Bitmap array
     /// @param w Bitmap width
